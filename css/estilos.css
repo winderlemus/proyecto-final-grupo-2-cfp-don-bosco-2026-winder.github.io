@@ -1,3 +1,8 @@
+
+
+
+
+
 header {
   background-color: #ffffff;
   color: white;
@@ -186,6 +191,6 @@ footer {
     header img {
         width: 100%;
         height: auto;
-        max-width: 300px; /* Evita que se deforme */
+        max-width: 300px;
     }
   }
