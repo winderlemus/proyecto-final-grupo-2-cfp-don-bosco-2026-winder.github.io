@@ -1,0 +1,453 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #29303d;
+  color: #333;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 30px 20px 20px;
+}
+
+.logo-img {
+  width: 220px;
+  height: auto;
+}
+
+.logo-svg-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-svg {
+  width: 220px;
+  height: 220px;
+}
+
+/* =====================
+   NAV
+===================== */
+nav {
+  background-color: #2c3e50;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   MAIN
+===================== */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 60px 80px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #29303d;
+}
+
+aside:nth-child(even) {
+  flex-direction: row-reverse;
+  background-color: #222831;
+}
+
+aside img {
+  width: 45%;
+  flex-shrink: 0;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.contenido-texto {
+  flex: 1;
+  padding: 0 50px;
+}
+
+aside h1 {
+  color: #ffffff;
+  font-size: 3.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 0;
+}
+
+aside p {
+  color: rgb(221, 218, 218);
+  text-align: left;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* ==========================================
+   ESTILOS PARA SERVICIOS
+========================================== */
+.tabla-precios {
+  width: 100%;
+  border-collapse: collapse;
+  color: #dddddd;
+  margin-top: 10px;
+}
+
+.tabla-precios thead tr {
+  background: #2c3e50;
+}
+
+.tabla-precios th {
+  padding: 8px 12px;
+  text-align: left;
+  color: #7ecfea;
+}
+
+.tabla-precios td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #3a4a5a;
+}
+
+.tabla-precios tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.equipo-adicional {
+  margin-top: 15px;
+  color: #aaaaaa;
+}
+
+.btn-reserva {
+  display: inline-block;
+  background: #f39c12;
+  color: #1a2a3a;
+  padding: 12px 40px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.btn-reserva:hover {
+  background: #e67e22;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+/* ==========================================
+   ESTILOS PARA RESERVAS
+========================================== */
+.formulario-reserva label {
+  color: #ffffff;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.formulario-reserva input,
+.formulario-reserva select,
+.formulario-reserva textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #3a4a5a;
+  border-radius: 6px;
+  background: #29303d;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.formulario-reserva input:focus,
+.formulario-reserva select:focus,
+.formulario-reserva textarea:focus {
+  border-color: #f39c12;
+  outline: none;
+}
+
+.formulario-reserva textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  max-width: 350px;
+}
+
+.checkbox-grid label {
+  color: #dddddd;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #29303d;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #3a4a5a;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.checkbox-grid input[type="checkbox"] {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.metodo-pago {
+  margin-top: 20px;
+  background: #1e2a36;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #3a4a5a;
+}
+
+.metodo-pago h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.metodo-pago .pago-sub {
+  color: #aaaaaa;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.opciones-pago {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.opciones-pago label {
+  color: #dddddd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #29303d;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #3a4a5a;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.opciones-pago input[type="radio"] {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.datos-tarjeta {
+  margin-top: 15px;
+  padding: 15px;
+  background: #29303d;
+  border-radius: 6px;
+  border: 1px solid #3a4a5a;
+  display: none;
+}
+
+.datos-tarjeta p {
+  color: #aaaaaa;
+  margin-bottom: 10px;
+}
+
+.datos-tarjeta .grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.datos-tarjeta label {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 3px;
+  font-size: 0.9rem;
+}
+
+.datos-tarjeta input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #3a4a5a;
+  border-radius: 6px;
+  background: #1e2a36;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.btn-reservar-form {
+  background: #f39c12;
+  color: #1a2a3a;
+  padding: 14px 50px;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-reservar-form:hover {
+  background: #e67e22;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+@media (max-width: 768px) {
+  aside {
+    flex-direction: column !important;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  aside img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .contenido-texto {
+    padding: 0;
+  }
+
+  aside h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  aside p {
+    text-align: center;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .opciones-pago {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .opciones-pago {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  aside h1 {
+    font-size: 2rem;
+  }
+}
+/* ==========================================
+   CENTRAR CONTENIDO EN RESERVAS
+========================================== */
+.reserva-aside {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 80px;
+}
+
+.reserva-aside .contenido-texto {
+  max-width: 750px;
+  width: 100%;
+  padding: 0;
+}
+
+.reserva-aside img {
+  display: none;
+}
+
+/* ==========================================
+   TAGS TIPOS DE BICICLETA
+========================================== */
+.tipo-tag {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-right: 6px;
+}
+
+.tipo-urbana  { background: #1a6b8a; color: #ffffff; }
+.tipo-montana { background: #2d6a2d; color: #ffffff; }
+.tipo-electrica { background: #6a3d9a; color: #ffffff; }
+
+/* ==========================================
+   TÍTULO CENTRADO RESERVAS
+========================================== */
+.titulo-centrado {
+  text-align: center;
+}

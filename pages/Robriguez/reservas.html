@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Reservas - Istmo Multisports & Adventure</title>
+    <meta name="description" content="Reserva tu bicicleta para recorrer el Centro Histórico de San Salvador." />
+    <meta name="keywords" content="reservar bicicleta, alquiler, San Salvador, Centro Histórico" />
+    
+    <meta property="og:title" content="Reservas - Istmo Multisports & Adventure" />
+    <meta property="og:description" content="Reserva tu bicicleta y prepárate para conquistar el Centro Histórico de San Salvador." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tusitio.com/reservas.html" />
+    <meta property="og:image" content="https://tusitio.com/img/og-reservas.jpg" />
+    
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+
+
+
+
+    <main>
+
+        <aside class="reserva-aside">
+            <div class="contenido-texto">
+                <h1 class="titulo-centrado">Reserva tu bicicleta</h1>
+                <p>Completa el formulario y elige tu método de pago para asegurar tu reserva.</p>
+
+                <form action="#" method="POST" class="formulario-reserva">
+
+                    <div class="form-row">
+                        <div>
+                            <label>Nombre completo *</label>
+                            <input type="text" placeholder="Ej: Carlos Perez" required />
+                        </div>
+                        <div>
+                            <label>DUI *</label>
+                            <input type="text" placeholder="Ej: 12345678-9" required />
+                        </div>
+                    </div>
+
+                    <div class="form-row mt-15">
+                        <div>
+                            <label>Teléfono *</label>
+                            <input type="tel" placeholder="Ej: 7012-3456" required />
+                        </div>
+                        <div>
+                            <label>Correo electrónico</label>
+                            <input type="email" placeholder="Ej: correo@ejemplo.com" />
+                        </div>
+                    </div>
+
+                    <div class="mt-15">
+                        <label>Fecha de reserva *</label>
+                        <input type="date" required />
+                    </div>
+
+                    <div class="form-row mt-15">
+                        <div>
+                            <label>Tipo de bicicleta *</label>
+                            <select required>
+                                <option value="">Selecciona...</option>
+                                <option value="urbana-26">Urbana - 26"</option>
+                                <option value="montana-275">Montaña - 27.5"</option>
+                                <option value="montana-29">Montaña - 29"</option>
+                                <option value="electrica-26">Eléctrica - 26"</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Tiempo de alquiler *</label>
+                            <select required>
+                                <option value="">Selecciona...</option>
+                                <option value="1-hora">1 Hora</option>
+                                <option value="2-horas">2 Horas</option>
+                                <option value="3-horas">3 Horas</option>
+                                <option value="4-horas">4 Horas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mt-15">
+                        <label>Equipo adicional</label>
+                        <div class="checkbox-grid">
+                            <label><input type="checkbox" /> Casco ($2.00)</label>
+                            <label><input type="checkbox" /> Candado ($1.00)</label>
+                        </div>
+                    </div>
+
+                    <div class="metodo-pago">
+                        <h3>Método de pago</h3>
+                        <p class="pago-sub">Selecciona como deseas realizar el pago:</p>
+
+                        <div class="opciones-pago">
+                            <label><input type="radio" name="pago" value="efectivo" checked /> Efectivo</label>
+                            <label><input type="radio" name="pago" value="tarjeta" /> Tarjeta de crédito/débito</label>
+                            <label><input type="radio" name="pago" value="transferencia" /> Transferencia bancaria</label>
+                            <label><input type="radio" name="pago" value="bitcoin" /> Bitcoin</label>
+                        </div>
+
+                        <div class="datos-tarjeta">
+                            <p>Ingresa los datos de tu tarjeta:</p>
+                            <div class="grid-2col">
+                                <div>
+                                    <label>Número de tarjeta</label>
+                                    <input type="text" placeholder="**** **** **** ****" />
+                                </div>
+                                <div>
+                                    <label>CVV</label>
+                                    <input type="text" placeholder="***" />
+                                </div>
+                                <div>
+                                    <label>Fecha de expiración</label>
+                                    <input type="text" placeholder="MM/AA" />
+                                </div>
+                                <div>
+                                    <label>Nombre del titular</label>
+                                    <input type="text" placeholder="Como aparece en la tarjeta" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-15">
+                        <label>Comentarios adicionales</label>
+                        <textarea placeholder="Algo que debamos saber?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-reservar-form">Reservar Ahora</button>
+
+                </form>
+            </div>
+            <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=600" alt="Formulario de reserva" />
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; Grupo 2 Oscar Rodriguez Aguillon - Curso Desarrollo Web CFP Don Bosco 2026.</p>
+    </footer>
+
+</body>
+</html>

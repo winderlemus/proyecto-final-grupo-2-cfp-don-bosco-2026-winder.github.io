@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #29303d;
+    color: #ffffff;
+    text-align: justify;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.mover {
+    width: 200px;
+    height: 140px;
+    transition: transform 0.60s;
+}
+
+.mover:hover {
+    transform: translateX(6px);
+}
+
+.contenido {
+    max-width: 900px; /* ancho máximo del texto */
+    margin: 0 auto;   /* centra el contenido */
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+}
