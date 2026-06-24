@@ -1,15 +1,3 @@
-
-
-
-aside {
-    font-family: Arial, sans-serif;
-      margin: 0;
-        padding: 0;
-          background-color: #29303d;
-            color: #333;
-}
-
-
 header {
   background-color: #ffffff;
   color: white;
@@ -52,7 +40,13 @@ nav a:hover {
 
 
 
-aside {
+section {
+  font-family: Arial, sans-serif;
+      margin: 0;
+        padding: 0;
+          background-color: #29303d;
+            color: #333;
+  background-color: #29303d;
   display: flex; 
   align-items: center;   
   gap: 30px;
@@ -60,7 +54,7 @@ aside {
 }
 
 
-aside img {
+section img {
   max-width: 50%;
   height: auto;
   border-radius: 6px;
@@ -72,7 +66,7 @@ aside img {
 }
 
 
-aside h1 {
+section h1 {
   color: #ffffff;
   font-size: 3.7rem;
   font-weight: 600;   
@@ -82,7 +76,7 @@ aside h1 {
 }
 
 
-aside p {
+section p {
   color: rgb(221, 218, 218);
   font-weight: 400;
   font-size: 1.5rem;   
@@ -172,3 +166,26 @@ footer {
   justify-content: space-between "500px";
 }
 
+
+  @media (max-width: 768px) {
+
+    
+    section, main {
+        flex-direction: column;
+        padding: 20px;          
+        gap: 20px;
+    }
+
+    
+    section img, main img,
+    .contenido-texto, main div {
+        width: 100%;
+    }
+
+    
+    header img {
+        width: 100%;
+        height: auto;
+        max-width: 300px; /* Evita que se deforme */
+    }
+  }
